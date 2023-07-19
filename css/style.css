@@ -1,0 +1,78 @@
+html {
+    background-color: #eee;
+    padding: 0 calc(40% - 18rem);
+}
+
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 0 2rem;
+}
+
+header {
+    /* https://shanabrian.com/web/html-css-js-technics/css-over-margin.php */
+    overflow: hidden;
+}
+
+footer {
+    overflow: hidden;
+    color: #ccc;
+    text-align: center;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: orangered;
+    /* background-color: #eee;
+    border-radius: 0.2rem; */
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 2rem;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+h2::before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: #eee;
+}
+th,td {
+    border: 1px #ccc solid;
+    padding: 0.2rem 0.5rem;
+    text-align: left;
+}
+tr:hover {
+    background-color: #eee;
+}
+
+img {
+    height: 32px;
+}
+
+.align-center {
+    text-align: center;
+}

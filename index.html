@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="True" />
+<title>TIゴシックV</title>
+<link rel="icon" href="favicon.ico" type="image/png">
+<link rel="stylesheet" href="css/sanitize.css">
+<link rel="stylesheet" href="css/typography.css">
+<link rel="stylesheet" href="css/style.css">
+
+<header>
+    <h1>TIゴシックV</h1>
+</header>
+
+<main>
+    <h2>概要</h2>
+
+    <p>TIゴシックVは <a href="http://vlgothic.dicey.org/">VLゴシック</a> をベースに、ARIB外字の一部補填などを行った固定幅フォントです。</p>
+    <p>ベースに対する主な変更点を以下に示します。</p>
+    <ul>
+    <li>ARIB STD-B3で規定されるARIB外字49文字 (交通情報・地図記号・天気記号・囲み文字) の追加</li>
+    <li>既存のARIB外字についてUnicode私用領域への割り当てを追加</li>
+    <li>一部の既存文字に対する形状調整</li>
+    </ul>
+
+    <h2>ライセンス</h2>
+
+    <p>
+    ベースのVLゴシックが複数のフォントを元に作成されていることから、グリフによって異なるライセンスが適用されます。<br>
+    元になったフォントごとに適用されるライセンスは下表のとおりです。
+    </p>
+
+    <table><tbody>
+        <tr>
+            <th>対象</th>
+            <th>適用ライセンス</th>
+        </tr>
+        <tr>
+            <td>TIゴシックV</td>
+            <td><a href="license/LICENSE">TIゴシックVのライセンス</a></td>
+        </tr>
+        <tr>
+            <td>├ TIゴシックVで独自に作成したグリフ</td>
+            <td><a href="license/LICENSE_J.mplus">M+ FONTS ライセンス</a></td>
+        </tr>
+        <tr>
+            <td>└ VLゴシック</td>
+            <td><a href="license/LICENSE.vlgothic">VLゴシックフォントライセンス</a></td>
+        </tr>
+        <tr>
+            <td>　├ M+ FONTS に由来するグリフ</td>
+            <td><a href="license/LICENSE_J.mplus">M+ FONTS ライセンス</a></td>
+        </tr>
+        <tr>
+            <td>　├ さざなみゴシックフォントに由来するグリフ</td>
+            <td><a href="license/README.sazanami">さざなみフォントのライセンス (修正BSDライセンス)</a></td>
+        </tr>
+        <tr>
+            <td>　└ VLゴシックで独自に作成されたグリフ</td>
+            <td><a href="license/LICENSE_J.mplus">M+ FONTS ライセンス</a></td>
+        </tr>
+    </tbody></table>
+
+    <h2>ダウンロード</h2>
+
+    <a href="ti-gothic-v.ttf">ti-gothic-v.ttf</a>
+
+    <h2>追加/変更文字の一覧</h2>
+
+    <table><tbody>
+        <tr>
+            <th>区点コード</th>
+            <th class="align-center">見本</th>
+            <th>Unicode</th>
+            <th>Unicode (私用領域)</th>
+            <th>グリフ変更区分</th>
+            <th>備考</th>
+        </tr>
+        
+        <tr>
+            <td>90-1</td>
+            <td class="align-center">
+                <img src="img/90-1.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26CC</td>
+            <td>U+E0C9</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-2</td>
+            <td class="align-center">
+                <img src="img/90-2.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26CD</td>
+            <td>U+E0CA</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-3</td>
+            <td class="align-center">
+                <img src="img/90-3.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2757</td>
+            <td>U+E0CB</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>90-4</td>
+            <td class="align-center">
+                <img src="img/90-4.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26CF</td>
+            <td>U+E0CC</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>90-5</td>
+            <td class="align-center">
+                <img src="img/90-5.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D0</td>
+            <td>U+E0CD</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-6</td>
+            <td class="align-center">
+                <img src="img/90-6.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D1</td>
+            <td>U+E0CE</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-8</td>
+            <td class="align-center">
+                <img src="img/90-8.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D2</td>
+            <td>U+E0D0</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-9</td>
+            <td class="align-center">
+                <img src="img/90-9.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D5</td>
+            <td>U+E0D1</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-10</td>
+            <td class="align-center">
+                <img src="img/90-10.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D3</td>
+            <td>U+E0D2</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-11</td>
+            <td class="align-center">
+                <img src="img/90-11.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D4</td>
+            <td>U+E0D3</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-16</td>
+            <td class="align-center">
+                <img src="img/90-16.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E0D8</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-17</td>
+            <td class="align-center">
+                <img src="img/90-17.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E0D9</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-20</td>
+            <td class="align-center">
+                <img src="img/90-20.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D6</td>
+            <td>U+E0DC</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-21</td>
+            <td class="align-center">
+                <img src="img/90-21.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D7</td>
+            <td>U+E0DD</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-22</td>
+            <td class="align-center">
+                <img src="img/90-22.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D8</td>
+            <td>U+E0DE</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-23</td>
+            <td class="align-center">
+                <img src="img/90-23.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26D9</td>
+            <td>U+E0DF</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-24</td>
+            <td class="align-center">
+                <img src="img/90-24.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26DA</td>
+            <td>U+E0E0</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-25</td>
+            <td class="align-center">
+                <img src="img/90-25.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26DB</td>
+            <td>U+E0E1</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-26</td>
+            <td class="align-center">
+                <img src="img/90-26.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26DC</td>
+            <td>U+E0E2</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-27</td>
+            <td class="align-center">
+                <img src="img/90-27.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26DD</td>
+            <td>U+E0E3</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-28</td>
+            <td class="align-center">
+                <img src="img/90-28.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26DE</td>
+            <td>U+E0E4</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-29</td>
+            <td class="align-center">
+                <img src="img/90-29.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26DF</td>
+            <td>U+E0E5</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-30</td>
+            <td class="align-center">
+                <img src="img/90-30.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26E0</td>
+            <td>U+E0E6</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-31</td>
+            <td class="align-center">
+                <img src="img/90-31.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26E1</td>
+            <td>U+E0E7</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-32</td>
+            <td class="align-center">
+                <img src="img/90-32.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2B55</td>
+            <td>U+E0E8</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-33</td>
+            <td class="align-center">
+                <img src="img/90-33.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+3248</td>
+            <td>U+E0E9</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-34</td>
+            <td class="align-center">
+                <img src="img/90-34.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+3249</td>
+            <td>U+E0EA</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-35</td>
+            <td class="align-center">
+                <img src="img/90-35.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+324A</td>
+            <td>U+E0EB</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-36</td>
+            <td class="align-center">
+                <img src="img/90-36.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+324B</td>
+            <td>U+E0EC</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-37</td>
+            <td class="align-center">
+                <img src="img/90-37.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+324C</td>
+            <td>U+E0ED</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-38</td>
+            <td class="align-center">
+                <img src="img/90-38.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+324D</td>
+            <td>U+E0EE</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-39</td>
+            <td class="align-center">
+                <img src="img/90-39.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+324E</td>
+            <td>U+E0EF</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-40</td>
+            <td class="align-center">
+                <img src="img/90-40.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+324F</td>
+            <td>U+E0F0</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-64</td>
+            <td class="align-center">
+                <img src="img/90-64.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2B1B</td>
+            <td>U+E188</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>90-65</td>
+            <td class="align-center">
+                <img src="img/90-65.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2B24</td>
+            <td>U+E189</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-1</td>
+            <td class="align-center">
+                <img src="img/91-1.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26E3</td>
+            <td>U+E1A7</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-2</td>
+            <td class="align-center">
+                <img src="img/91-2.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2B56</td>
+            <td>U+E1A8</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-3</td>
+            <td class="align-center">
+                <img src="img/91-3.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2B57</td>
+            <td>U+E1A9</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-4</td>
+            <td class="align-center">
+                <img src="img/91-4.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2B58</td>
+            <td>U+E1AA</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-5</td>
+            <td class="align-center">
+                <img src="img/91-5.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2B59</td>
+            <td>U+E1AB</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-6</td>
+            <td class="align-center">
+                <img src="img/91-6.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2613</td>
+            <td>U+E1AC</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-7</td>
+            <td class="align-center">
+                <img src="img/91-7.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+328B</td>
+            <td>U+E1AD</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-8</td>
+            <td class="align-center">
+                <img src="img/91-8.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+3012</td>
+            <td>U+E1AE</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-9</td>
+            <td class="align-center">
+                <img src="img/91-9.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26E8</td>
+            <td>U+E1AF</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-10</td>
+            <td class="align-center">
+                <img src="img/91-10.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+3246</td>
+            <td>U+E1B0</td>
+            <td>追加 (既存流用)</td>
+            <td>U+3251, U+6587 を元に作成</td>
+        </tr>
+        
+        <tr>
+            <td>91-11</td>
+            <td class="align-center">
+                <img src="img/91-11.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+3245</td>
+            <td>U+E1B1</td>
+            <td>追加 (既存流用)</td>
+            <td>U+3251, U+5E7C を元に作成</td>
+        </tr>
+        
+        <tr>
+            <td>91-12</td>
+            <td class="align-center">
+                <img src="img/91-12.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26E9</td>
+            <td>U+E1B2</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-13</td>
+            <td class="align-center">
+                <img src="img/91-13.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+534D, U+0FD6</td>
+            <td>U+E1B3</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域および U+0FD6 への割り当て追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-14</td>
+            <td class="align-center">
+                <img src="img/91-14.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26EA</td>
+            <td>U+E1B4</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-15</td>
+            <td class="align-center">
+                <img src="img/91-15.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26EB</td>
+            <td>U+E1B5</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-16</td>
+            <td class="align-center">
+                <img src="img/91-16.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26EC</td>
+            <td>U+E1B6</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-17</td>
+            <td class="align-center">
+                <img src="img/91-17.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2668</td>
+            <td>U+E1B7</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-18</td>
+            <td class="align-center">
+                <img src="img/91-18.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26ED</td>
+            <td>U+E1B8</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-19</td>
+            <td class="align-center">
+                <img src="img/91-19.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26EE</td>
+            <td>U+E1B9</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-20</td>
+            <td class="align-center">
+                <img src="img/91-20.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26EF</td>
+            <td>U+E1BA</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-21</td>
+            <td class="align-center">
+                <img src="img/91-21.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2693</td>
+            <td>U+E1BB</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-22</td>
+            <td class="align-center">
+                <img src="img/91-22.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2708</td>
+            <td>U+E1BC</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-23</td>
+            <td class="align-center">
+                <img src="img/91-23.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F0</td>
+            <td>U+E1BD</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-24</td>
+            <td class="align-center">
+                <img src="img/91-24.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F1</td>
+            <td>U+E1BE</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-25</td>
+            <td class="align-center">
+                <img src="img/91-25.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F2</td>
+            <td>U+E1BF</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-26</td>
+            <td class="align-center">
+                <img src="img/91-26.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F3</td>
+            <td>U+E1C0</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-27</td>
+            <td class="align-center">
+                <img src="img/91-27.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F4</td>
+            <td>U+E1C1</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-28</td>
+            <td class="align-center">
+                <img src="img/91-28.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F5</td>
+            <td>U+E1C2</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-29</td>
+            <td class="align-center">
+                <img src="img/91-29.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E1C3</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-30</td>
+            <td class="align-center">
+                <img src="img/91-30.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+24B9</td>
+            <td>U+E1C4</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-31</td>
+            <td class="align-center">
+                <img src="img/91-31.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+24C8</td>
+            <td>U+E1C5</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-32</td>
+            <td class="align-center">
+                <img src="img/91-32.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F6</td>
+            <td>U+E1C6</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-33</td>
+            <td class="align-center">
+                <img src="img/91-33.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E1C7</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-34</td>
+            <td class="align-center">
+                <img src="img/91-34.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E1C8</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-35</td>
+            <td class="align-center">
+                <img src="img/91-35.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E1C9</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-36</td>
+            <td class="align-center">
+                <img src="img/91-36.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E1CA</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-37</td>
+            <td class="align-center">
+                <img src="img/91-37.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E1CB</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-38</td>
+            <td class="align-center">
+                <img src="img/91-38.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F7</td>
+            <td>U+E1CC</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-39</td>
+            <td class="align-center">
+                <img src="img/91-39.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F8</td>
+            <td>U+E1CD</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-40</td>
+            <td class="align-center">
+                <img src="img/91-40.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26F9</td>
+            <td>U+E1CE</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-41</td>
+            <td class="align-center">
+                <img src="img/91-41.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26FA</td>
+            <td>U+E1CF</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-42</td>
+            <td class="align-center">
+                <img src="img/91-42.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E1D0</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-43</td>
+            <td class="align-center">
+                <img src="img/91-43.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+260E</td>
+            <td>U+E1D1</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-44</td>
+            <td class="align-center">
+                <img src="img/91-44.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26FB</td>
+            <td>U+E1D2</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-45</td>
+            <td class="align-center">
+                <img src="img/91-45.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26FC</td>
+            <td>U+E1D3</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>91-46</td>
+            <td class="align-center">
+                <img src="img/91-46.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26FD</td>
+            <td>U+E1D4</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-47</td>
+            <td class="align-center">
+                <img src="img/91-47.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26FE</td>
+            <td>U+E1D5</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-48</td>
+            <td class="align-center">
+                <img src="img/91-48.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>-</td>
+            <td>U+E1D6</td>
+            <td>追加 (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>91-49</td>
+            <td class="align-center">
+                <img src="img/91-49.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26FF</td>
+            <td>U+E1D7</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>92-47</td>
+            <td class="align-center">
+                <img src="img/92-47.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+3244</td>
+            <td>-</td>
+            <td>追加 (既存流用)</td>
+            <td>U+3251, U+554F を元に作成</td>
+        </tr>
+        
+        <tr>
+            <td>92-88</td>
+            <td class="align-center">
+                <img src="img/92-88.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+3247</td>
+            <td>-</td>
+            <td>追加 (既存流用)</td>
+            <td>U+3251, U+7B8F を元に作成</td>
+        </tr>
+        
+        <tr>
+            <td>93-15</td>
+            <td class="align-center">
+                <img src="img/93-15.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+3036</td>
+            <td>U+E2CB</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>93-16</td>
+            <td class="align-center">
+                <img src="img/93-16.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26BE</td>
+            <td>U+E2CC</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>93-67</td>
+            <td class="align-center">
+                <img src="img/93-67.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26C4</td>
+            <td>U+E2E9</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>93-80</td>
+            <td class="align-center">
+                <img src="img/93-80.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26C5</td>
+            <td>U+E2F1</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>93-81</td>
+            <td class="align-center">
+                <img src="img/93-81.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2614</td>
+            <td>U+E2F2</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>93-82</td>
+            <td class="align-center">
+                <img src="img/93-82.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26C6</td>
+            <td>U+E2F3</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>93-83</td>
+            <td class="align-center">
+                <img src="img/93-83.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2603</td>
+            <td>U+E2F4</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>93-84</td>
+            <td class="align-center">
+                <img src="img/93-84.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26C7</td>
+            <td>U+E2F5</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>93-85</td>
+            <td class="align-center">
+                <img src="img/93-85.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2608</td>
+            <td>U+E2F6</td>
+            <td>ベースから変更なし</td>
+            <td>私用領域への割り当てを追加</td>
+        </tr>
+        
+        <tr>
+            <td>93-86</td>
+            <td class="align-center">
+                <img src="img/93-86.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+26C8</td>
+            <td>U+E2F7</td>
+            <td>置き換え (独自)</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>-</td>
+            <td class="align-center">
+                <img src="img/U+0030.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+0030</td>
+            <td>-</td>
+            <td>置き換え (既存流用)</td>
+            <td>斜線を削除</td>
+        </tr>
+        
+        <tr>
+            <td>-</td>
+            <td class="align-center">
+                <img src="img/U+005C.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+005C</td>
+            <td>-</td>
+            <td>置き換え (既存流用)</td>
+            <td>U+00A5 (Yen Sign) を参照</td>
+        </tr>
+        
+        <tr>
+            <td>-</td>
+            <td class="align-center">
+                <img src="img/U+2B1C.png" alt onerror="this.onerror = null; this.src='';">
+            </td>
+            <td>U+2B1C</td>
+            <td>-</td>
+            <td>置き換え (独自)</td>
+            <td>U+2B1B に合わせ大きさを調整</td>
+        </tr>
+        
+    </tbody></table>
+
+    <h2>変更履歴</h2>
+
+    <table><tbody>
+        
+        <tr>
+            <th>バージョン</th>
+            <th>日付</th>
+            <th>変更内容</th>
+        </tr>
+        <tr>
+            <td>0.1</td>
+            <td>2023-07-19</td>
+            <td>初版</td>
+        </tr>
+        
+    </tbody></table>
+</main>
+
+<footer>
+    <p>Copyright © D.Miwa 2023</p>
+</footer>
+
+</html>
