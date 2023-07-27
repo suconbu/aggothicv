@@ -16,19 +16,19 @@
 <main>
     <h2>概要</h2>
 
-    <p>{{ fontnameJp }}は <a href="http://vlgothic.dicey.org/">VLゴシック</a> をベースに、ARIB外字の一部補填などを行った固定幅フォントです。</p>
-    <p>ベースに対する主な変更点を以下に示します。</p>
+    <p>{{ fontnameJp }}は <a href="http://vlgothic.dicey.org/">VLゴシック</a> をベースにARIB外字の追加記号を補填した固定幅フォントです。</p>
+    <p>ベースに対する主な変更点は下記の通りです。</p>
     <ul>
-    <li>ARIB STD-B3で規定されるARIB外字49文字 (交通情報・地図記号・天気記号・囲み文字) の追加</li>
-    <li>既存のARIB外字についてUnicode私用領域への割り当てを追加</li>
-    <li>一部の既存文字に対する形状調整</li>
+    <li>ARIB外字の追加記号49文字 (交通情報・地図記号・天気記号・囲み文字) を追加</li>
+    <li>ARIB外字についてUnicode5.2に基づく割り当てに加えてUnicode私用領域への割り当てを追加</li>
+    <li>ARIB外字以外の一部の既存文字の字形を調整</li>
     </ul>
 
     <h2>ライセンス</h2>
 
     <p>
     ベースのVLゴシックが複数のフォントを元に作成されていることから、グリフによって異なるライセンスが適用されます。<br>
-    元になったフォントごとに適用されるライセンスは下表のとおりです。
+    元となったフォントごとに適用されるライセンスは下表の通りです。
     </p>
 
     <table><tbody>
@@ -37,11 +37,11 @@
             <th>適用ライセンス</th>
         </tr>
         <tr>
-            <td>TIゴシックV</td>
-            <td><a href="license/LICENSE">TIゴシックVのライセンス</a></td>
+            <td>{{ fontnameJp }}</td>
+            <td><a href="license/LICENSE">{{ fontnameJp }}のライセンス</a></td>
         </tr>
         <tr>
-            <td>├ TIゴシックVで独自に作成したグリフ</td>
+            <td>├ {{ fontnameJp }}で独自に作成したグリフ</td>
             <td><a href="license/LICENSE_J.mplus">M+ FONTS ライセンス</a></td>
         </tr>
         <tr>
@@ -70,21 +70,36 @@
 
     <table><tbody>
         <tr>
-            <th>区点コード</th>
-            <th class="align-center">見本</th>
+            <th>変更区分</th>
+            <th>意味</th>
+        </tr>
+        {% for category in categories %}
+        <tr>
+            <td>{{ category.code }}</td>
+            <td>{{ category.description }}</td>
+        </tr>
+        {% endfor %}
+    </tbody></table>
+
+    <br>
+
+    <table><tbody>
+        <tr>
+            <th>区点番号</th>
             <th>Unicode</th>
             <th>Unicode (私用領域)</th>
-            <th>グリフ変更区分</th>
+            <th class="align-center">見本</th>
+            <th>変更区分</th>
             <th>備考</th>
         </tr>
         {% for char in charlist %}
         <tr>
             <td>{{ char[0] }}</td>
+            <td>{{ char[1] }}</td>
+            <td>{{ char[2] }}</td>
             <td class="align-center">
                 <img src="img/{{ char[0] if char[0] != "-" else char[1] }}.png" alt onerror="this.onerror = null; this.src='';">
             </td>
-            <td>{{ char[1] }}</td>
-            <td>{{ char[2] }}</td>
             <td>{{ char[3] }}</td>
             <td>{{ char[4] }}</td>
         </tr>
@@ -94,16 +109,16 @@
     <h2>変更履歴</h2>
 
     <table><tbody>
-        {% for change in changelog %}
         <tr>
             <th>バージョン</th>
             <th>日付</th>
             <th>変更内容</th>
         </tr>
+        {% for change in changelog %}
         <tr>
             <td>{{ change.version }}</td>
             <td>{{ change.date }}</td>
-            <td>{% for line in change.description %}{{ line }}{% endfor %}</td>
+            <td>{% for line in change.description %}<div>{{ line }}</div>{% endfor %}</td>
         </tr>
         {% endfor %}
     </tbody></table>
